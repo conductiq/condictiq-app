@@ -1,0 +1,69 @@
+<p>form works!</p>
+
+<form [formGroup]="form" (submit)="save()">
+    <div class="row">
+        <div class="flex">
+            <mat-form-field>
+                <mat-label>Name</mat-label>
+                <input
+                    formControlName="name"
+                    matInput
+                    />
+            </mat-form-field>
+        </div>
+    </div>
+    <div class="row">
+        <div class="flex">
+            <mat-form-field>
+                <mat-label>
+                    Description
+                </mat-label>
+                <textarea formControlName="description" matInput rows="4"></textarea>
+            </mat-form-field>
+        </div>
+        <div class="flex">
+            <mat-form-field>
+                <mat-label>
+                    Role
+                </mat-label>
+                <textarea formControlName="role" matInput rows="4"></textarea>
+            </mat-form-field>
+        </div>
+    </div>
+    <div class="row">
+        <div class="flex">
+            <mat-form-field>
+                <mat-label>
+                    Background
+                </mat-label>
+                <textarea formControlName="background" matInput rows="4"></textarea>
+            </mat-form-field>
+        </div>
+        <div class="flex">
+            <mat-form-field>
+                <mat-label>
+                    Goal
+                </mat-label>
+                <textarea formControlName="goal" matInput rows="2"></textarea>
+            </mat-form-field>
+        </div>
+    </div>
+    <div class="row">
+        <div class="flex">
+            <mat-form-field>
+                <mat-label>
+                    Ollama URL
+                </mat-label>
+                <input formControlName="url" matInput />
+            </mat-form-field>
+        </div>
+        <div class="flex">
+            <mat-form-field>
+                <mat-label>
+                    Model
+                </mat-label>
+                <input formControlName="model" matInput />
+            </mat-form-field>
+        </div>
+    </div>
+</form>
